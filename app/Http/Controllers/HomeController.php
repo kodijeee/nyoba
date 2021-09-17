@@ -13,7 +13,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        dd('Halo, ini Controller Kelompok 6');
+        dd('Hallo semuanya, ini Controller Kelompok 6');
     }
 
     /**
