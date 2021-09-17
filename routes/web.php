@@ -16,3 +16,14 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+//route controller
+Route::get('testing', 'App\Http\Controllers\testing@index');
+
+Route::get('HomeController', 'App\Http\Controllers\HomeController@index');
+
+//rout view
+Route::get('/tugas1', function () {
+    return view('tugas1');
+});
+
