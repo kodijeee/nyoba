@@ -17,13 +17,22 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/home', function () {
+    return view('home',[
+        "title" => "Home"
+    ]);
+});
+
 //route controller
 Route::get('testing', 'App\Http\Controllers\testing@index');
 
 Route::get('HomeController', 'App\Http\Controllers\HomeController@index');
 
 //rout view
-Route::get('/tugas1', function () {
-    return view('tugas1');
+Route::get('/login', function () {
+    return view('login',[
+        "title" => "Login",
+        "name" => "Khodijah Aulia Rahma",
+    ]);
 });
 
